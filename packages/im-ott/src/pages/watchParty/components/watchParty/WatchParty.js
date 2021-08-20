@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import queryString from "query-string";
 import cx from "classnames";
+import { useParams, useHistory, useLocation } from "react-router-dom";
+import io from "socket.io-client";
 
 // Components
 import { Title, Label } from "imcomponents/atoms/typography";
@@ -13,12 +16,51 @@ import Input from "imcomponents/atoms/input";
 import Participants from "../participants/Participants";
 import Tooltip from "imcomponents/atoms/toolTip";
 import Button, { BUTTON_TYPES } from "imcomponents/atoms/button";
+// import { getCurrentUser } from "imbase/services/firebase";
+
+import { EMPTY_STRING } from "imbase/constants/base.constants";
 
 // Styles
 import styles from "./watchParty.module.scss";
 
+let socket;
+
 function WatchParty() {
   const [visible, setVisibility] = useState(true);
+  const [userName, setUserName] = useState(EMPTY_STRING);
+  const [userId, setUserId] = useState(EMPTY_STRING);
+  const [room, setRoom] = useState(EMPTY_STRING);
+  // const uid = getCurrentUser()?.uid;
+  // const uName = getCurrentUser()?.displayName;
+  const { partyId } = useParams();
+  const history = useHistory();
+  const location = useLocation();
+  const { uid, uName } = location.state;
+
+  // const ENDPOINT = process.env.REACT_APP_HOST_PARTY_SERVER;
+  const ENDPOINT = "localhost:5000";
+
+  useEffect(() => {
+    socket = io(ENDPOINT);
+
+    console.log(uName);
+
+    setUserId(uid);
+    setUserName(uName);
+    setRoom(partyId);
+
+    socket.emit("join", { userId: uid, userName: uName, room: partyId });
+
+    return () => {
+      socket.emit("disconnectTheSocket", {
+        userId: uid,
+        userName: uName,
+        room: partyId,
+      });
+
+      socket.off();
+    };
+  }, [partyId]);
 
   const toggleSettingsVisibility = () => {
     setVisibility(!visible);
@@ -27,6 +69,10 @@ function WatchParty() {
   const settingsClassName = cx(styles.watchPartySettings, {
     [styles.zeroWidth]: !visible,
   });
+
+  const handleEndWatchParty = () => {
+    history.push(`/film/${partyId}`);
+  };
 
   return (
     <div className={styles.container}>
@@ -73,6 +119,7 @@ function WatchParty() {
               <Button
                 type={BUTTON_TYPES.PRIMARY}
                 className={styles.endWatchPartyButton}
+                onClick={handleEndWatchParty}
               >
                 <span className={styles.endWatchPartyButtonLabel}>
                   {"End Watch Party"}

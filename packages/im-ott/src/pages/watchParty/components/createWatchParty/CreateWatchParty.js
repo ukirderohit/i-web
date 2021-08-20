@@ -9,14 +9,22 @@ import { EyeOutlined, InfoCircleOutlined } from "imcomponents/atoms/icon";
 import Input from "imcomponents/atoms/input";
 import Participants from "../participants/Participants";
 import Tooltip from "imcomponents/atoms/toolTip";
+import { useParams } from "react-router-dom";
+import { getCurrentUser } from "imbase/services/firebase";
 
 // Styles
 import styles from "./createWatchParty.module.scss";
 
 function WatchParty(props) {
+  const { movieId } = useParams();
+  const uid = getCurrentUser()?.uid;
+  const uName = getCurrentUser()?.displayName;
+
   const handleCreateWatchParty = () => {
     const { history } = props;
-    history.push("/watchparty/1234");
+    history.push(`/watchparty/${movieId}`, {
+      uid, uName
+    });
   };
   return (
     <div className={styles.container}>
