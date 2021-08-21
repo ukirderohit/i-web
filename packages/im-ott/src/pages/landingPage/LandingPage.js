@@ -1,10 +1,10 @@
 import React from "react";
 
 //graphql
-import { NEW_RELEASES, FEATURED_MOVIES } from "imbase/graphql/queries";
+import { NEW_RELEASES, FEATURED_MOVIES } from "@im/base/src/graphql/queries";
 
 // Components
-import FilmList from "imcomponents/organisms/filmList";
+import FilmList from "@im/components/src/organisms/filmList";
 import Banner from "../../organisms/banner";
 
 function LandingPage() {

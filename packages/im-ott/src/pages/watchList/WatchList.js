@@ -8,27 +8,30 @@ import _isEmpty from "lodash/isEmpty";
 import _times from "lodash/times";
 
 // Components
-import FilmCard from "imcomponents/molecules/filmCard";
-import FilmCardMobile from "imcomponents/molecules/filmCardMobile";
-import Skeleton from "imcomponents/atoms/skeleton";
-import Error from "imcomponents/molecules/error";
-import { isMobile } from "imcomponents/atoms/device";
+import FilmCard from "@im/components/src/molecules/filmCard";
+import FilmCardMobile from "@im/components/src/molecules/filmCardMobile";
+import Skeleton from "@im/components/src/atoms/skeleton";
+import Error from "@im/components/src/molecules/error";
+import { isMobile } from "@im/components/src/atoms/device";
 
 // graphql
-import { gqlClient } from "imbase/graphql/gqlClient";
-import { GET_WATCHLISTED_MOVIES } from "imbase/graphql/queries";
+import { gqlClient } from "@im/base/src/graphql/gqlClient";
+import { GET_WATCHLISTED_MOVIES } from "@im/base/src/graphql/queries";
 
 // Readers
-import FilmReader from "imbase/readers/Film";
+import FilmReader from "@im/base/src/readers/Film";
 
 // Utils
-import { getCurrentUser } from "imbase/services/firebase";
-import getRoute from "imbase/utils/getRoute";
-import VIEWS from "imbase/constants/route.views";
-import APPS from "imbase/constants/route.apps";
+import { getCurrentUser } from "@im/base/src/services/firebase";
+import getRoute from "@im/base/src/utils/getRoute";
+import VIEWS from "@im/base/src/constants/route.views";
+import APPS from "@im/base/src/constants/route.apps";
 
 // Constants
-import { EMPTY_ARRAY, EMPTY_OBJECT } from "imbase/constants/base.constants";
+import {
+  EMPTY_ARRAY,
+  EMPTY_OBJECT,
+} from "@im/base/src/constants/base.constants";
 
 // Styles
 import styles from "./watchList.module.scss";

@@ -7,22 +7,25 @@ import _map from "lodash/map";
 import _isEmpty from "lodash/isEmpty";
 
 // Components
-import Drawer from "imcomponents/atoms/drawer";
-import { PlusCircleOutlined } from "imcomponents/atoms/icon";
-import { isMobile } from "imcomponents/atoms/device";
+import Drawer from "@im/components/src/atoms/drawer";
+import { PlusCircleOutlined } from "@im/components/src/atoms/icon";
+import { isMobile } from "@im/components/src/atoms/device";
 import CommentThread from "../../components/commentThread";
 
 // Services
-import youtubeService from "imbase/services/youtubeService";
+import youtubeService from "@im/base/src/services/youtubeService";
 
 // Utils
-import getYTDataFromResponse from "imbase/utils/getYTDataFromResponse";
+import getYTDataFromResponse from "@im/base/src/utils/getYTDataFromResponse";
 
 // Constants
-import { EMPTY_ARRAY, EMPTY_OBJECT } from "imbase/constants/base.constants";
+import {
+  EMPTY_ARRAY,
+  EMPTY_OBJECT,
+} from "@im/base/src/constants/base.constants";
 
 // Readers
-import commentThreadReader from "imbase/readers/CommentThread";
+import commentThreadReader from "@im/base/src/readers/CommentThread";
 
 // Styles
 import styles from "./allComments.module.scss";

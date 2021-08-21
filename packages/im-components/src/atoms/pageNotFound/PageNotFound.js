@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import cx from "classnames";
 
 //Components
-import { isMobile } from "imcomponents/atoms/device";
+import { isMobile } from "@im/components/src/atoms/device";
 
 //Styles
 import styles from "./pageNotFound.module.scss";

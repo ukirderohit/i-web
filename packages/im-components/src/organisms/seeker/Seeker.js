@@ -12,7 +12,7 @@ import cx from "classnames";
 import ReactPlayer from "react-player/youtube";
 
 // Utils
-import { getFormattedTime } from "imbase/utils/getFormattedTime";
+import { getFormattedTime } from "@im/base/src/utils/getFormattedTime";
 
 // Styles
 import styles from "./seeker.module.scss";

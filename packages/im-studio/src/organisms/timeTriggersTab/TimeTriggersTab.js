@@ -3,30 +3,33 @@ import { useDispatch } from "react-redux";
 import PropTypes from "prop-types";
 
 // Components
-import Button from "imcomponents/atoms/button";
-import Form from "imcomponents/atoms/form";
-import Input from "imcomponents/atoms/input";
-import Table from "imcomponents/atoms/table";
-import Seeker from "imcomponents/organisms/seeker";
-import Loader from "imcomponents/molecules/loader";
+import Button from "@im/components/src/atoms/button";
+import Form from "@im/components/src/atoms/form";
+import Input from "@im/components/src/atoms/input";
+import Table from "@im/components/src/atoms/table";
+import Seeker from "@im/components/src/organisms/seeker";
+import Loader from "@im/components/src/molecules/loader";
 
 // Lodash
 import _isEmpty from "lodash/isEmpty";
 
 // Utils
-import { getFormattedTime, countSeconds } from "imbase/utils/getFormattedTime";
+import {
+  getFormattedTime,
+  countSeconds,
+} from "@im/base/src/utils/getFormattedTime";
 
 // Sentry
 import * as Sentry from "@sentry/react";
 
 // Constants
-import { EMPTY_OBJECT } from "imbase/constants/base.constants";
+import { EMPTY_OBJECT } from "@im/base/src/constants/base.constants";
 
 // Redux Actions
 import { addAction, deleteAction } from "../../redux/movies/actions";
 
 // icons
-import { EditOutlined, DeleteOutlined } from "imcomponents/atoms/icon";
+import { EditOutlined, DeleteOutlined } from "@im/components/src/atoms/icon";
 
 // Styles
 import styles from "./timeTriggersTab.module.scss";
@@ -216,7 +219,7 @@ const TimeTriggersTab = (props) => {
             />
           </Form.Item>
           <Form.Item {...buttonItemLayout}>
-          <Button
+            <Button
               className={styles.addNewButton}
               label={"Add New"}
               onClick={() => {

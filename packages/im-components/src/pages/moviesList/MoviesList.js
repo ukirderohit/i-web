@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { isMobile } from "imcomponents/atoms/device";
+import { isMobile } from "@im/components/src/atoms/device";
 import cx from "classnames";
 
 // Lodash
@@ -10,28 +10,31 @@ import _get from "lodash/get";
 import _times from "lodash/times";
 
 // Components
-import FilmCard from "imcomponents/molecules/filmCard";
-import FilmCardMobile from "imcomponents/molecules/filmCardMobile";
-import Skeleton from "imcomponents/atoms/skeleton";
-import Error from "imcomponents/molecules/error";
+import FilmCard from "@im/components/src/molecules/filmCard";
+import FilmCardMobile from "@im/components/src/molecules/filmCardMobile";
+import Skeleton from "@im/components/src/atoms/skeleton";
+import Error from "@im/components/src/molecules/error";
 
 // Readers
-import FilmReader from "imbase/readers/Film";
+import FilmReader from "@im/base/src/readers/Film";
 
 // graphql
-import { gqlClient } from "imbase/graphql/gqlClient";
+import { gqlClient } from "@im/base/src/graphql/gqlClient";
 
 // Constants
-import { EMPTY_ARRAY, EMPTY_OBJECT } from "imbase/constants/base.constants";
+import {
+  EMPTY_ARRAY,
+  EMPTY_OBJECT,
+} from "@im/base/src/constants/base.constants";
 
 // Utils
-import getRoute from "imbase/utils/getRoute";
-import VIEWS from "imbase/constants/route.views";
-import APPS from "imbase/constants/route.apps";
+import getRoute from "@im/base/src/utils/getRoute";
+import VIEWS from "@im/base/src/constants/route.views";
+import APPS from "@im/base/src/constants/route.apps";
 
 // Styles
 import styles from "./moviesList.module.scss";
-import { getCurrentUser } from "imbase/services/firebase";
+import { getCurrentUser } from "@im/base/src/services/firebase";
 import { getQueryParams } from "./utils";
 
 const renderMovie = (filmDetails = EMPTY_OBJECT, isFeatured) => {

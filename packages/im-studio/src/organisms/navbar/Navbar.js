@@ -1,23 +1,27 @@
 import React, { useContext, useState } from "react";
 import { useHistory } from "react-router-dom";
-import { isMobile, BrowserView, MobileView } from "imcomponents/atoms/device";
+import {
+  isMobile,
+  BrowserView,
+  MobileView,
+} from "@im/components/src/atoms/device";
 
 // Components
 import { Menu } from "antd";
-import Logo from "imcomponents/molecules/logo";
-import { UserContext } from "imbase/providers/UserProvider";
+import Logo from "@im/components/src/molecules/logo";
+import { UserContext } from "@im/base/src/providers/UserProvider";
 import {
   CloudUploadOutlined,
   LogoutOutlined,
   HomeOutlined,
   HomeFilled,
-} from "imcomponents/atoms/icon";
+} from "@im/components/src/atoms/icon";
 
 // Service
-import { logOut } from "imbase/services/firebase";
+import { logOut } from "@im/base/src/services/firebase";
 
 //Utils
-import APPS from "imbase/constants/route.apps";
+import APPS from "@im/base/src/constants/route.apps";
 
 // Styles
 import styles from "./navbar.module.scss";

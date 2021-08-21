@@ -3,19 +3,19 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 // Components
-import { VideoCameraFilled } from "imcomponents/atoms/icon";
-import { isMobile } from "imcomponents/atoms/device";
+import { VideoCameraFilled } from "@im/components/src/atoms/icon";
+import { isMobile } from "@im/components/src/atoms/device";
 
 // Utils
-import getRoute from "imbase/utils/getRoute";
-import VIEWS from "imbase/constants/route.views";
-import APPS from "imbase/constants/route.apps";
+import getRoute from "@im/base/src/utils/getRoute";
+import VIEWS from "@im/base/src/constants/route.views";
+import APPS from "@im/base/src/constants/route.apps";
 
 // Styles
 import styles from "./logo.module.scss";
 
 // Constants
-import { EMPTY_STRING } from "imbase/constants/base.constants";
+import { EMPTY_STRING } from "@im/base/src/constants/base.constants";
 
 const Logo = (props) => {
   const { text, application } = props;

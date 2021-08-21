@@ -2,7 +2,7 @@ import React from "react";
 
 // Components
 import { Carousel } from "antd";
-import { Title, Label } from "imcomponents/atoms/typography";
+import { Title, Label } from "@im/components/src/atoms/typography";
 
 // Styles
 import styles from "./watchPartyTips.module.scss";

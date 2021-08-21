@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Constants
-import { EMPTY_OBJECT } from "imbase/constants/base.constants";
+import { EMPTY_OBJECT } from "@im/base/src/constants/base.constants";
 
 // Helpers
 import { getBaseUrl, getBaseParams, getBaseHeaders } from "./helpers/http";

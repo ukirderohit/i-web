@@ -2,18 +2,18 @@ import React, { useContext, useState, useEffect } from "react";
 import { Redirect } from "react-router-dom";
 
 // Components
-import { Title, Label } from "imcomponents/atoms/typography";
-import { isMobile } from "imcomponents/atoms/device";
-import Logo from "imcomponents/molecules/logo";
-import GoogleLogin from "imcomponents/molecules/googleLogin";
+import { Title, Label } from "@im/components/src/atoms/typography";
+import { isMobile } from "@im/components/src/atoms/device";
+import Logo from "@im/components/src/molecules/logo";
+import GoogleLogin from "@im/components/src/molecules/googleLogin";
 
 // Utils
-import getRoute from "imbase/utils/getRoute";
-import VIEWS from "imbase/constants/route.views";
-import APPS from "imbase/constants/route.apps";
+import getRoute from "@im/base/src/utils/getRoute";
+import VIEWS from "@im/base/src/constants/route.views";
+import APPS from "@im/base/src/constants/route.apps";
 
 // Providers
-import { UserContext } from "imbase/providers/UserProvider";
+import { UserContext } from "@im/base/src/providers/UserProvider";
 
 // Styles
 import styles from "./login.module.scss";

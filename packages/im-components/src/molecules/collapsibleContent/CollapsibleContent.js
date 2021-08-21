@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 // Constants
-import { EMPTY_STRING } from "imbase/constants/base.constants";
+import { EMPTY_STRING } from "@im/base/src/constants/base.constants";
 
 // Styles
 import styles from "./collapsibleContent.module.scss";

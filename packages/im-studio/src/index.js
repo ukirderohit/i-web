@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 
 // graphql
-import { gqlClient } from "imbase/graphql/gqlClient";
+import { gqlClient } from "@im/base/src/graphql/gqlClient";
 
 // Sentry Error Logging
 import * as Sentry from "@sentry/react";

@@ -4,15 +4,15 @@ import cx from "classnames";
 
 // Components
 import TimeAgo from "react-timeago";
-import Image from "imcomponents/atoms/image";
-import CollapsibleContent from "imcomponents/molecules/collapsibleContent";
+import Image from "@im/components/src/atoms/image";
+import CollapsibleContent from "@im/components/src/molecules/collapsibleContent";
 
 // Readers
-import commentThreadReader from "imbase/readers/CommentThread";
-import commentReader from "imbase/readers/Comment";
+import commentThreadReader from "@im/base/src/readers/CommentThread";
+import commentReader from "@im/base/src/readers/Comment";
 
 // Constants
-import { EMPTY_OBJECT } from "imbase/constants/base.constants";
+import { EMPTY_OBJECT } from "@im/base/src/constants/base.constants";
 
 // Styles
 import styles from "./comment.module.scss";

@@ -8,22 +8,25 @@ import _isEmpty from "lodash/isEmpty";
 
 // Components
 import CommentThread from "./components/commentThread";
-import { Label } from "imcomponents/atoms/typography";
+import { Label } from "@im/components/src/atoms/typography";
 import AllComments from "./components/allComments";
-import { isMobile } from "imcomponents/atoms/device";
+import { isMobile } from "@im/components/src/atoms/device";
 
 // Services
-import youtubeService from "imbase/services/youtubeService";
+import youtubeService from "@im/base/src/services/youtubeService";
 
 // Utils
-import getYTDataFromResponse from "imbase/utils/getYTDataFromResponse";
+import getYTDataFromResponse from "@im/base/src/utils/getYTDataFromResponse";
 
 // Constants
-import { EMPTY_ARRAY, EMPTY_OBJECT } from "imbase/constants/base.constants";
+import {
+  EMPTY_ARRAY,
+  EMPTY_OBJECT,
+} from "@im/base/src/constants/base.constants";
 import { MAX_COMMENT_COUNT_NORMAL_MODE } from "./constants/general";
 
 // Readers
-import commentThreadReader from "imbase/readers/CommentThread";
+import commentThreadReader from "@im/base/src/readers/CommentThread";
 
 // Styles
 import styles from "./comments.module.scss";

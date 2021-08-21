@@ -1,6 +1,6 @@
 import { all, takeEvery, call, put } from "redux-saga/effects";
-import { gqlClient } from "imbase/graphql/gqlClient";
-import { QUERY_ALL_MOVIES, QUERY_MOVIE_ID } from "imbase/graphql/queries";
+import { gqlClient } from "@im/base/src/graphql/gqlClient";
+import { QUERY_ALL_MOVIES, QUERY_MOVIE_ID } from "@im/base/src/graphql/queries";
 import {
   CREATE_MOVIE,
   UPDATE_MOVIE_ID,
@@ -11,7 +11,7 @@ import {
   CREATE_TRIGGER,
   MUTATE_DELETE_TRIGGER,
   MUTATE_DELETE_MOVIE,
-} from "imbase/graphql/mutation";
+} from "@im/base/src/graphql/mutation";
 import {
   GET_ALL_MOVIES,
   ADD_MOVIE,
@@ -26,7 +26,7 @@ import {
   getAllMoviesError,
   getMovieSuccess,
 } from "./actions";
-import { getCurrentUser } from "imbase/services/firebase";
+import { getCurrentUser } from "@im/base/src/services/firebase";
 
 // Lodash
 import _isEmpty from "lodash/isEmpty";
@@ -35,15 +35,15 @@ import _isEmpty from "lodash/isEmpty";
 import * as Sentry from "@sentry/react";
 
 // Toaster
-import { toast } from "imcomponents/atoms/toaster";
+import { toast } from "@im/components/src/atoms/toaster";
 
 //Reader
-import YoutubeReader from "imbase/readers/YoutubeVideo";
+import YoutubeReader from "@im/base/src/readers/YoutubeVideo";
 
 // Utils
-import getRoute from "imbase/utils/getRoute";
-import VIEWS from "imbase/constants/route.views";
-import APPS from "imbase/constants/route.apps";
+import getRoute from "@im/base/src/utils/getRoute";
+import VIEWS from "@im/base/src/constants/route.views";
+import APPS from "@im/base/src/constants/route.apps";
 
 // Apollo Client Queries
 const getAllMoviesFromApi = () => {

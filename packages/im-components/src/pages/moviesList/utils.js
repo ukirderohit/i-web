@@ -2,10 +2,10 @@ import {
   NEW_RELEASES,
   FEATURED_MOVIES,
   QUERY_ALL_MOVIES,
-} from "imbase/graphql/queries";
+} from "@im/base/src/graphql/queries";
 
 // Constants
-import { EMPTY_OBJECT } from "imbase/constants/base.constants";
+import { EMPTY_OBJECT } from "@im/base/src/constants/base.constants";
 
 const getQueryParams = (movieCriteria, currentUser) => {
   const GET_QUERY_PARAMS = {

@@ -11,7 +11,7 @@ import {
 } from "./types";
 
 // Constants
-import { EMPTY_OBJECT } from "imbase/constants/base.constants";
+import { EMPTY_OBJECT } from "@im/base/src/constants/base.constants";
 
 const INIT_STATE = {
   movies: EMPTY_OBJECT,

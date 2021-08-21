@@ -2,21 +2,21 @@ import React, { useState, useEffect, useContext } from "react";
 import PropTypes from "prop-types";
 
 // Components
-import { UserContext } from "imbase/providers/UserProvider";
-import Error from "imcomponents/molecules/error";
-import Button, { BUTTON_TYPES } from "imcomponents/atoms/button";
-import { PlusOutlined, MinusOutlined } from "imcomponents/atoms/icon";
+import { UserContext } from "@im/base/src/providers/UserProvider";
+import Error from "@im/components/src/molecules/error";
+import Button, { BUTTON_TYPES } from "@im/components/src/atoms/button";
+import { PlusOutlined, MinusOutlined } from "@im/components/src/atoms/icon";
 
 // Lodash
 import _isEmpty from "lodash/isEmpty";
 
 // graphql
-import { gqlClient } from "imbase/graphql/gqlClient";
-import { IS_WATCHLISTED } from "imbase/graphql/queries";
+import { gqlClient } from "@im/base/src/graphql/gqlClient";
+import { IS_WATCHLISTED } from "@im/base/src/graphql/queries";
 import {
   MUTATION_ADD_WATCHLIST,
   MUTATION_DELETE_WATCHLIST,
-} from "imbase/graphql/mutation";
+} from "@im/base/src/graphql/mutation";
 
 // Styles
 import styles from "./watchlist.module.scss";

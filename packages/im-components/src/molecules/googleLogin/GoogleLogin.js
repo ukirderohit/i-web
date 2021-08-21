@@ -1,7 +1,7 @@
 import React from "react";
 
 // Services
-import { signInWithGoogle } from "imbase/services/firebase";
+import { signInWithGoogle } from "@im/base/src/services/firebase";
 
 // Styles
 import styles from "./googleLogin.module.scss";

@@ -4,11 +4,11 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 // Constants
-import { EMPTY_OBJECT } from "imbase/constants/base.constants";
+import { EMPTY_OBJECT } from "@im/base/src/constants/base.constants";
 
 // Components
-import Button from "imcomponents/atoms/button";
-import Form from "imcomponents/atoms/form";
+import Button from "@im/components/src/atoms/button";
+import Form from "@im/components/src/atoms/form";
 
 // Sentry
 import * as Sentry from "@sentry/react";
@@ -17,9 +17,9 @@ import * as Sentry from "@sentry/react";
 import { deleteMovie, updateMovieByID } from "../../redux/movies/actions";
 
 // Utils
-import getRoute from "imbase/utils/getRoute";
-import VIEWS from "imbase/constants/route.views";
-import APPS from "imbase/constants/route.apps";
+import getRoute from "@im/base/src/utils/getRoute";
+import VIEWS from "@im/base/src/constants/route.views";
+import APPS from "@im/base/src/constants/route.apps";
 
 // Styles
 import styles from "./publishTab.module.scss";

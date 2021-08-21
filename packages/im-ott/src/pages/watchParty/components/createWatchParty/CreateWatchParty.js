@@ -1,19 +1,19 @@
 import React from "react";
 
 // Components
-import { Title, Label } from "imcomponents/atoms/typography";
-import Button, { BUTTON_TYPES } from "imcomponents/atoms/button";
-import Image from "imcomponents/atoms/image";
+import { Title, Label } from "@im/components/src/atoms/typography";
+import Button, { BUTTON_TYPES } from "@im/components/src/atoms/button";
+import Image from "@im/components/src/atoms/image";
 import WatchPartyTips from "../watchPartyTips/WatchPartyTips";
-import { EyeOutlined, InfoCircleOutlined } from "imcomponents/atoms/icon";
-import Input from "imcomponents/atoms/input";
+import { EyeOutlined, InfoCircleOutlined } from "@im/components/src/atoms/icon";
+import Input from "@im/components/src/atoms/input";
 import Participants from "../participants/Participants";
-import Tooltip from "imcomponents/atoms/toolTip";
+import Tooltip from "@im/components/src/atoms/toolTip";
 
 // Utils
-import getRoute from "imbase/utils/getRoute";
-import VIEWS from "imbase/constants/route.views";
-import APPS from "imbase/constants/route.apps";
+import getRoute from "@im/base/src/utils/getRoute";
+import VIEWS from "@im/base/src/constants/route.views";
+import APPS from "@im/base/src/constants/route.apps";
 
 // Styles
 import styles from "./createWatchParty.module.scss";

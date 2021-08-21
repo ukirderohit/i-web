@@ -4,7 +4,7 @@ import React from "react";
 import _times from "lodash/times";
 
 // Components
-import Image from "imcomponents/atoms/image";
+import Image from "@im/components/src/atoms/image";
 
 // Styles
 import styles from "./participants.module.scss";

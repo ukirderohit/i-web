@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Route, Switch } from "react-router-dom";
 
 // Components
-import PageNotFound from "imcomponents/atoms/pageNotFound";
-import Seeker from "imcomponents/organisms/seeker";
-import Player from "imcomponents/organisms/player";
-import AppLoader from "imcomponents/molecules/appLoader";
-import MoviesList from "imcomponents/pages/moviesList";
+import PageNotFound from "@im/components/src/atoms/pageNotFound";
+import Seeker from "@im/components/src/organisms/seeker";
+import Player from "@im/components/src/organisms/player";
+import AppLoader from "@im/components/src/molecules/appLoader";
+import MoviesList from "@im/components/src/pages/moviesList";
 import SearchMovie from "../organisms/searchMovie";
 import AppSkeleton from "../organisms/appSkeleton";
 import WatchList from "../pages/watchList";

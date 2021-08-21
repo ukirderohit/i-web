@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import cx from "classnames";
-import { isMobile } from "imcomponents/atoms/device";
+import { isMobile } from "@im/components/src/atoms/device";
 
 // Lodash
 import _times from "lodash/times";
 
 // Icon
-import { StarTwoTone } from "imcomponents/atoms/icon";
+import { StarTwoTone } from "@im/components/src/atoms/icon";
 
 // Styles
 import styles from "./filmcard.module.scss";
@@ -39,7 +39,7 @@ const FilmCard = (props) => {
     [styles.medium]: (isFeatured && isMobile) || (!isFeatured && !isMobile),
     [styles.large]: isFeatured && !isMobile,
     [styles.xsmall]: !isFeatured && isMobile,
-    [styles.detailsRightPadding]: alignRight
+    [styles.detailsRightPadding]: alignRight,
   });
   return (
     <div className={filmCardContainerClassname}>

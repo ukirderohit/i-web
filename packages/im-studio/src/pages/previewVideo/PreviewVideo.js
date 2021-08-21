@@ -6,18 +6,18 @@ import { useParams, useLocation } from "react-router-dom";
 import _isEmpty from "lodash/isEmpty";
 
 // Components
-import Error from "imcomponents/molecules/error";
-import Player from "imcomponents/organisms/player";
+import Error from "@im/components/src/molecules/error";
+import Player from "@im/components/src/organisms/player";
 
 // graphql
-import { gqlClient } from "imbase/graphql/gqlClient";
-import { QUERY_INTERACTIVE_DATA_BY_MOVIE_ID } from "imbase/graphql/queries";
+import { gqlClient } from "@im/base/src/graphql/gqlClient";
+import { QUERY_INTERACTIVE_DATA_BY_MOVIE_ID } from "@im/base/src/graphql/queries";
 
 // Redux Actions
 import { getMovieByID } from "../../redux/movies/actions";
 
 // Constants
-import { EMPTY_OBJECT } from "imbase/constants/base.constants";
+import { EMPTY_OBJECT } from "@im/base/src/constants/base.constants";
 
 // Styles
 import styles from "./previewVideo.module.scss";

@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 // Components
-import UserProvider from "imbase/providers/UserProvider";
+import UserProvider from "@im/base/src/providers/UserProvider";
 import AppRoutes from "./AppRoutes";
 import Login from "../pages/login";
 

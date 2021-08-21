@@ -6,9 +6,9 @@ import { useHistory, useParams, useLocation } from "react-router-dom";
 import _isEmpty from "lodash/isEmpty";
 
 // Components
-import Tabs from "imcomponents/atoms/tabs";
-import Error from "imcomponents/molecules/error";
-import Player from "imcomponents/organisms/player";
+import Tabs from "@im/components/src/atoms/tabs";
+import Error from "@im/components/src/molecules/error";
+import Player from "@im/components/src/organisms/player";
 import EditTab from "../../organisms/editTab";
 import Hotspots from "../../organisms/hotspots";
 import OverlaysTab from "../../organisms/overlaysTab";

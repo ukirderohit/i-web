@@ -1,11 +1,11 @@
 import React, { useContext, useState, useEffect } from "react";
 import { useHistory, useLocation } from "react-router-dom";
-import { BrowserView, MobileView } from "imcomponents/atoms/device";
+import { BrowserView, MobileView } from "@im/components/src/atoms/device";
 
 // Components
 import { Menu } from "antd";
-import Logo from "imcomponents/molecules/logo";
-import { UserContext } from "imbase/providers/UserProvider";
+import Logo from "@im/components/src/molecules/logo";
+import { UserContext } from "@im/base/src/providers/UserProvider";
 import {
   LogoutOutlined,
   HomeOutlined,
@@ -15,15 +15,15 @@ import {
   BellFilled,
   HeartOutlined,
   HeartFilled,
-} from "imcomponents/atoms/icon";
+} from "@im/components/src/atoms/icon";
 
 // Service
-import { logOut } from "imbase/services/firebase";
+import { logOut } from "@im/base/src/services/firebase";
 
 // Utils
-import getRoute from "imbase/utils/getRoute";
-import VIEWS from "imbase/constants/route.views";
-import APPS from "imbase/constants/route.apps";
+import getRoute from "@im/base/src/utils/getRoute";
+import VIEWS from "@im/base/src/constants/route.views";
+import APPS from "@im/base/src/constants/route.apps";
 
 // Styles
 import styles from "./navbar.module.scss";
@@ -48,7 +48,7 @@ function Navbar() {
     } else {
       setSelectedMenu(null);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location]);
 
   const handleLogout = () => {

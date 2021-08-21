@@ -2,8 +2,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 // Components
 import { ErrorBoundary } from "@sentry/react";
-import AppLoader from "imcomponents/molecules/appLoader";
-import { ToastContainer } from "imcomponents/atoms/toaster";
+import AppLoader from "@im/components/src/molecules/appLoader";
+import { ToastContainer } from "@im/components/src/atoms/toaster";
 
 // Routes
 import Routes from "./routes";

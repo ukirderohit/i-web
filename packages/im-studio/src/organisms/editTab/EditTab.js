@@ -4,13 +4,13 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 // Components
-import { DeleteOutlined } from "imcomponents/atoms/icon";
-import Button, { BUTTON_TYPES } from "imcomponents/atoms/button";
-import Form from "imcomponents/atoms/form";
-import Image from "imcomponents/atoms/image";
-import Input from "imcomponents/atoms/input";
-import TextArea from "imcomponents/atoms/textArea";
-import Loader from "imcomponents/molecules/loader";
+import { DeleteOutlined } from "@im/components/src/atoms/icon";
+import Button, { BUTTON_TYPES } from "@im/components/src/atoms/button";
+import Form from "@im/components/src/atoms/form";
+import Image from "@im/components/src/atoms/image";
+import Input from "@im/components/src/atoms/input";
+import TextArea from "@im/components/src/atoms/textArea";
+import Loader from "@im/components/src/molecules/loader";
 
 import _isEmpty from "lodash/isEmpty";
 
@@ -18,7 +18,10 @@ import _isEmpty from "lodash/isEmpty";
 import * as Sentry from "@sentry/react";
 
 // Constants
-import { EMPTY_OBJECT, EMPTY_STRING } from "imbase/constants/base.constants";
+import {
+  EMPTY_OBJECT,
+  EMPTY_STRING,
+} from "@im/base/src/constants/base.constants";
 
 // Redux Actions
 import { updateMovieByID } from "../../redux/movies/actions";

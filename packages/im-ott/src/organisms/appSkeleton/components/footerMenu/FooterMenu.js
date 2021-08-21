@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 
 // Components
-import Menu from "imcomponents/atoms/menu";
-import Drawer from "imcomponents/atoms/drawer";
-import Notification from "imcomponents/molecules/notification";
+import Menu from "@im/components/src/atoms/menu";
+import Drawer from "@im/components/src/atoms/drawer";
+import Notification from "@im/components/src/molecules/notification";
 import SearchMovie from "../../../searchMovie";
 import {
   HomeOutlined,
@@ -14,12 +14,12 @@ import {
   BellFilled,
   HeartOutlined,
   HeartFilled,
-} from "imcomponents/atoms/icon";
+} from "@im/components/src/atoms/icon";
 
 // Utils
-import getRoute from "imbase/utils/getRoute";
-import VIEWS from "imbase/constants/route.views";
-import APPS from "imbase/constants/route.apps";
+import getRoute from "@im/base/src/utils/getRoute";
+import VIEWS from "@im/base/src/constants/route.views";
+import APPS from "@im/base/src/constants/route.apps";
 
 // Styles
 import styles from "./footerMenu.module.scss";

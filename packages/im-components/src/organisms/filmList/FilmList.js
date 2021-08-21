@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { isMobile } from "imcomponents/atoms/device";
+import { isMobile } from "@im/components/src/atoms/device";
 import { Link, useHistory } from "react-router-dom";
 import PropTypes from "prop-types";
 import cx from "classnames";
@@ -11,34 +11,34 @@ import _isEmpty from "lodash/isEmpty";
 import _times from "lodash/times";
 
 // graphql
-import { gqlClient } from "imbase/graphql/gqlClient";
+import { gqlClient } from "@im/base/src/graphql/gqlClient";
 
 // Components
-import FilmCard from "imcomponents/molecules/filmCard";
-import { Title } from "imcomponents/atoms/typography";
-import Skeleton from "imcomponents/atoms/skeleton";
-import Error from "imcomponents/molecules/error";
+import FilmCard from "@im/components/src/molecules/filmCard";
+import { Title } from "@im/components/src/atoms/typography";
+import Skeleton from "@im/components/src/atoms/skeleton";
+import Error from "@im/components/src/molecules/error";
 
 // Readers
-import FilmReader from "imbase/readers/Film";
+import FilmReader from "@im/base/src/readers/Film";
 
 // Helpers
 import { getFilmListClassName } from "./helpers/filmlist.general";
 
 // Icon
-import { LeftOutlined, RightOutlined } from "imcomponents/atoms/icon";
+import { LeftOutlined, RightOutlined } from "@im/components/src/atoms/icon";
 
 // Constants
 import {
   EMPTY_ARRAY,
   EMPTY_OBJECT,
   EMPTY_STRING,
-} from "imbase/constants/base.constants";
+} from "@im/base/src/constants/base.constants";
 
 // Utils
-import getRoute from "imbase/utils/getRoute";
-import VIEWS from "imbase/constants/route.views";
-import APPS from "imbase/constants/route.apps";
+import getRoute from "@im/base/src/utils/getRoute";
+import VIEWS from "@im/base/src/constants/route.views";
+import APPS from "@im/base/src/constants/route.apps";
 
 // Styles
 import styles from "./filmlist.module.scss";

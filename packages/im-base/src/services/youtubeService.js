@@ -4,7 +4,7 @@ import _get from "lodash/get";
 import axios from "axios";
 
 // Reader
-import YoutubeReader from "imbase/readers/YoutubeVideo";
+import YoutubeReader from "@im/base/src/readers/YoutubeVideo";
 
 // Constants
 import { MODULES, BASE_URL, URL_REGEX } from "./constants/modules.constants";

@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 import cx from "classnames";
 
 // Components
-import { isMobile } from "imcomponents/atoms/device";
+import { isMobile } from "@im/components/src/atoms/device";
 
 // Readers
-import OverlayReader from "imbase/readers/Overlay";
+import OverlayReader from "@im/base/src/readers/Overlay";
 
 // Constants
-import { EMPTY_OBJECT } from "imbase/constants/base.constants";
+import { EMPTY_OBJECT } from "@im/base/src/constants/base.constants";
 
 // Styles
 import styles from "./overlay.module.scss";

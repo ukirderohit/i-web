@@ -3,23 +3,29 @@ import { useDispatch } from "react-redux";
 import PropTypes from "prop-types";
 
 // Components
-import Button from "imcomponents/atoms/button";
-import Form from "imcomponents/atoms/form";
-import Input from "imcomponents/atoms/input";
-import Table from "imcomponents/atoms/table";
-import { Select, Option } from "imcomponents/atoms/select";
-import Seeker from "imcomponents/organisms/seeker";
-import Loader from "imcomponents/molecules/loader";
+import Button from "@im/components/src/atoms/button";
+import Form from "@im/components/src/atoms/form";
+import Input from "@im/components/src/atoms/input";
+import Table from "@im/components/src/atoms/table";
+import { Select, Option } from "@im/components/src/atoms/select";
+import Seeker from "@im/components/src/organisms/seeker";
+import Loader from "@im/components/src/molecules/loader";
 
 // Lodash
 import _map from "lodash/map";
 import _isEmpty from "lodash/isEmpty";
 
 // Utils
-import { getFormattedTime, countSeconds } from "imbase/utils/getFormattedTime";
+import {
+  getFormattedTime,
+  countSeconds,
+} from "@im/base/src/utils/getFormattedTime";
 
 // Constants
-import { EMPTY_OBJECT, EMPTY_ARRAY } from "imbase/constants/base.constants";
+import {
+  EMPTY_OBJECT,
+  EMPTY_ARRAY,
+} from "@im/base/src/constants/base.constants";
 
 // Sentry
 import * as Sentry from "@sentry/react";
@@ -28,7 +34,7 @@ import * as Sentry from "@sentry/react";
 import { addAction, deleteAction } from "../../redux/movies/actions";
 
 // icons
-import { EditOutlined, DeleteOutlined } from "imcomponents/atoms/icon";
+import { EditOutlined, DeleteOutlined } from "@im/components/src/atoms/icon";
 
 // Styles
 import styles from "./overlaysTab.module.scss";
@@ -282,7 +288,7 @@ const OverlaysTab = (props) => {
             </Select>
           </Form.Item>
           <Form.Item {...buttonItemLayout}>
-          <Button
+            <Button
               className={styles.addNewButton}
               label={"Add New"}
               onClick={() => {

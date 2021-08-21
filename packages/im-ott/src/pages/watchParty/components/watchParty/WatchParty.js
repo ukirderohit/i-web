@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import cx from "classnames";
 
 // Components
-import { Title, Label } from "imcomponents/atoms/typography";
-import Player from "imcomponents/organisms/player";
+import { Title, Label } from "@im/components/src/atoms/typography";
+import Player from "@im/components/src/organisms/player";
 import {
   LeftOutlined,
   RightOutlined,
   InfoCircleOutlined,
-} from "imcomponents/atoms/icon";
-import Input from "imcomponents/atoms/input";
+} from "@im/components/src/atoms/icon";
+import Input from "@im/components/src/atoms/input";
 import Participants from "../participants/Participants";
-import Tooltip from "imcomponents/atoms/toolTip";
-import Button, { BUTTON_TYPES } from "imcomponents/atoms/button";
+import Tooltip from "@im/components/src/atoms/toolTip";
+import Button, { BUTTON_TYPES } from "@im/components/src/atoms/button";
 
 // Styles
 import styles from "./watchParty.module.scss";

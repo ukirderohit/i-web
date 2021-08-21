@@ -5,22 +5,22 @@ import { Link, withRouter } from "react-router-dom";
 // Lodash
 import _isEmpty from "lodash/isEmpty";
 
-import { QUERY_ALL_MOVIES } from "imbase/graphql/queries";
+import { QUERY_ALL_MOVIES } from "@im/base/src/graphql/queries";
 
 // Components
-import FilmList from "imcomponents/organisms/filmList";
+import FilmList from "@im/components/src/organisms/filmList";
 
 // Components
-import Loader from "imcomponents/molecules/loader/Loader";
-import Error from "imcomponents/molecules/error";
-import { CloudUploadOutlined } from "imcomponents/atoms/icon";
-import { isMobile } from "imcomponents/atoms/device";
+import Loader from "@im/components/src/molecules/loader/Loader";
+import Error from "@im/components/src/molecules/error";
+import { CloudUploadOutlined } from "@im/components/src/atoms/icon";
+import { isMobile } from "@im/components/src/atoms/device";
 
 // Utils
-import { getCurrentUser } from "imbase/services/firebase";
-import APPS from "imbase/constants/route.apps";
-import getRoute from "imbase/utils/getRoute";
-import VIEWS from "imbase/constants/route.views";
+import { getCurrentUser } from "@im/base/src/services/firebase";
+import APPS from "@im/base/src/constants/route.apps";
+import getRoute from "@im/base/src/utils/getRoute";
+import VIEWS from "@im/base/src/constants/route.views";
 
 // Styles
 import styles from "./dashboard.module.scss";
@@ -81,7 +81,10 @@ const Dashboard = () => {
         application={APPS.STUDIO}
       />
       <div className={styles.uploadLinkContainer}>
-        <Link className={styles.uploadLink} to={getRoute(APPS.STUDIO, VIEWS.UPLOAD)}>
+        <Link
+          className={styles.uploadLink}
+          to={getRoute(APPS.STUDIO, VIEWS.UPLOAD)}
+        >
           <CloudUploadOutlined className={iconStyle} />
           <h4>Add movies</h4>
         </Link>

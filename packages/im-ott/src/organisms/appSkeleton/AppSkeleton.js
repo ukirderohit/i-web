@@ -2,12 +2,16 @@ import React, { useEffect, useContext, useState } from "react";
 import { Redirect } from "react-router-dom";
 import PropTypes from "prop-types";
 import cx from "classnames";
-import { BrowserView, MobileView, isMobile } from "imcomponents/atoms/device";
+import {
+  BrowserView,
+  MobileView,
+  isMobile,
+} from "@im/components/src/atoms/device";
 
 // Components
 import { Layout } from "antd";
-import FooterContent from "imcomponents/organisms/footerContent";
-import { UserContext } from "imbase/providers/UserProvider";
+import FooterContent from "@im/components/src/organisms/footerContent";
+import { UserContext } from "@im/base/src/providers/UserProvider";
 import Navbar from "../navbar";
 import FooterMenu from "./components/footerMenu";
 

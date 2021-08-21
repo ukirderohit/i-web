@@ -5,11 +5,11 @@ import {
   withOrientationChange,
   BrowserView,
   MobileView,
-} from "imcomponents/atoms/device";
+} from "@im/components/src/atoms/device";
 import cx from "classnames";
 
 // Graphql
-import { FEATURED_MOVIES } from "imbase/graphql/queries";
+import { FEATURED_MOVIES } from "@im/base/src/graphql/queries";
 
 // Lodash
 import _isEmpty from "lodash/isEmpty";
@@ -17,39 +17,42 @@ import _times from "lodash/times";
 import _truncate from "lodash/truncate";
 
 // Components
-import Button, { BUTTON_TYPES } from "imcomponents/atoms/button";
-import { CaretRightOutlined, PlusOutlined } from "imcomponents/atoms/icon";
-import Image from "imcomponents/atoms/image";
-import Skeleton from "imcomponents/atoms/skeleton";
-import { Title, Label } from "imcomponents/atoms/typography";
-import Error from "imcomponents/molecules/error";
-import Player from "imcomponents/organisms/player";
-import FilmList from "imcomponents/organisms/filmList";
-import Drawer from "imcomponents/atoms/drawer";
+import Button, { BUTTON_TYPES } from "@im/components/src/atoms/button";
+import {
+  CaretRightOutlined,
+  PlusOutlined,
+} from "@im/components/src/atoms/icon";
+import Image from "@im/components/src/atoms/image";
+import Skeleton from "@im/components/src/atoms/skeleton";
+import { Title, Label } from "@im/components/src/atoms/typography";
+import Error from "@im/components/src/molecules/error";
+import Player from "@im/components/src/organisms/player";
+import FilmList from "@im/components/src/organisms/filmList";
+import Drawer from "@im/components/src/atoms/drawer";
 import Comments from "../../organisms/comments";
 import Watchlist from "../../organisms/watchlist";
 
 // Readers
-import FilmReader from "imbase/readers/Film";
+import FilmReader from "@im/base/src/readers/Film";
 
 // graphql
-import { gqlClient } from "imbase/graphql/gqlClient";
+import { gqlClient } from "@im/base/src/graphql/gqlClient";
 import {
   QUERY_MOVIE_ID,
   QUERY_INTERACTIVE_DATA_BY_MOVIE_ID,
-} from "imbase/graphql/queries";
+} from "@im/base/src/graphql/queries";
 
 // Constants
-import { EMPTY_OBJECT } from "imbase/constants/base.constants";
+import { EMPTY_OBJECT } from "@im/base/src/constants/base.constants";
 
 // Styles
 import styles from "./filmDetails.module.scss";
 
 // Icon
-import { StarFilled } from "imcomponents/atoms/icon";
+import { StarFilled } from "@im/components/src/atoms/icon";
 
 // Image
-import rotateImg from "imbase/assets/images/rotatephone.png";
+import rotateImg from "@im/base/src/assets/images/rotatephone.png";
 
 const DESCRIPTION_INITIAL_DISPLAY_LIMIT = 400;
 

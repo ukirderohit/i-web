@@ -1,6 +1,5 @@
-
 // Constants
-import { EMPTY_STRING } from "imbase/constants/base.constants";
+import { EMPTY_STRING } from "@im/base/src/constants/base.constants";
 
 // Lodash
 import _isEmpty from "lodash/isEmpty";
@@ -9,7 +8,7 @@ import _isEmpty from "lodash/isEmpty";
 import youtubeService from "../../../services/youtubeService";
 
 const isUploadDisabled = (videoData) => {
-   return _isEmpty(videoData)
-}
+  return _isEmpty(videoData);
+};
 
-export { isUploadDisabled }
+export { isUploadDisabled };

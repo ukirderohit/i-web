@@ -8,11 +8,14 @@ import _map from "lodash/map";
 // Components
 import screenfull from "screenfull";
 import ReactPlayer from "react-player/youtube";
-import Progress from "imcomponents/atoms/progress";
+import Progress from "@im/components/src/atoms/progress";
 import Overlay from "../overlay";
 
 // Constants
-import { EMPTY_STRING, EMPTY_OBJECT } from "imbase/constants/base.constants";
+import {
+  EMPTY_STRING,
+  EMPTY_OBJECT,
+} from "@im/base/src/constants/base.constants";
 
 // Styles
 import styles from "./player.module.scss";

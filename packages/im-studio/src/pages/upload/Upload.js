@@ -7,18 +7,22 @@ import getVideoId from "get-video-id";
 import _isEmpty from "lodash/isEmpty";
 
 // Constants
-import { EMPTY_OBJECT } from "imbase/constants/base.constants";
+import { EMPTY_OBJECT } from "@im/base/src/constants/base.constants";
 
 // Components
-import Button, { BUTTON_TYPES } from "imcomponents/atoms/button";
-import { CloudUploadOutlined } from "imcomponents/atoms/icon";
-import { BrowserView, MobileView, isMobile } from "imcomponents/atoms/device";
-import Drawer from "imcomponents/atoms/drawer";
-import Image from "imcomponents/atoms/image";
-import { Modal } from "imcomponents/atoms/modal";
-import SearchBox from "imcomponents/atoms/searchBox";
-import Error from "imcomponents/molecules/error";
-import Loader from "imcomponents/molecules/loader/Loader";
+import Button, { BUTTON_TYPES } from "@im/components/src/atoms/button";
+import { CloudUploadOutlined } from "@im/components/src/atoms/icon";
+import {
+  BrowserView,
+  MobileView,
+  isMobile,
+} from "@im/components/src/atoms/device";
+import Drawer from "@im/components/src/atoms/drawer";
+import Image from "@im/components/src/atoms/image";
+import { Modal } from "@im/components/src/atoms/modal";
+import SearchBox from "@im/components/src/atoms/searchBox";
+import Error from "@im/components/src/molecules/error";
+import Loader from "@im/components/src/molecules/loader/Loader";
 
 // Redux Actions
 import { addMovie } from "../../redux/movies/actions";

@@ -11,7 +11,7 @@ import * as Sentry from "@sentry/react";
 import { Integrations } from "@sentry/tracing";
 
 // graphql
-import { gqlClient } from "imbase/graphql/gqlClient";
+import { gqlClient } from "@im/base/src/graphql/gqlClient";
 
 import dotenv from "dotenv";
 

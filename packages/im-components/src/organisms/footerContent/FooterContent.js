@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { isMobile } from "imcomponents/atoms/device";
+import { isMobile } from "@im/components/src/atoms/device";
 import cx from "classnames";
 
 // Styles
@@ -11,7 +11,7 @@ import {
   FacebookFilled,
   InstagramOutlined,
   TwitterOutlined,
-} from "imcomponents/atoms/icon";
+} from "@im/components/src/atoms/icon";
 
 function FooterContent() {
   const footerWrapperclassName = cx(styles.footerWrapper, {

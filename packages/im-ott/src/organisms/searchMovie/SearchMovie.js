@@ -4,18 +4,18 @@ import PropTypes from "prop-types";
 import cx from "classnames";
 
 //Components
-import noDataFound from "imbase/assets/images/noDataFound.png";
-import SearchBox from "imcomponents/atoms/searchBox";
-import Image from "imcomponents/atoms/image";
-import { isMobile } from "imcomponents/atoms/device";
-import FilmCard from "imcomponents/molecules/filmCard";
-import FilmCardMobile from "imcomponents/molecules/filmCardMobile";
-import Skeleton from "imcomponents/atoms/skeleton";
-import Error from "imcomponents/molecules/error";
+import noDataFound from "@im/base/src/assets/images/noDataFound.png";
+import SearchBox from "@im/components/src/atoms/searchBox";
+import Image from "@im/components/src/atoms/image";
+import { isMobile } from "@im/components/src/atoms/device";
+import FilmCard from "@im/components/src/molecules/filmCard";
+import FilmCardMobile from "@im/components/src/molecules/filmCardMobile";
+import Skeleton from "@im/components/src/atoms/skeleton";
+import Error from "@im/components/src/molecules/error";
 
 // graphql
-import { gqlClient } from "imbase/graphql/gqlClient";
-import { QUERY_ALL_MOVIES } from "imbase/graphql/queries";
+import { gqlClient } from "@im/base/src/graphql/gqlClient";
+import { QUERY_ALL_MOVIES } from "@im/base/src/graphql/queries";
 
 // Lodash
 import _map from "lodash/map";
@@ -23,15 +23,18 @@ import _isEmpty from "lodash/isEmpty";
 import _times from "lodash/times";
 
 // Readers
-import FilmReader from "imbase/readers/Film";
+import FilmReader from "@im/base/src/readers/Film";
 
 // Constants
-import { EMPTY_OBJECT, EMPTY_STRING } from "imbase/constants/base.constants";
+import {
+  EMPTY_OBJECT,
+  EMPTY_STRING,
+} from "@im/base/src/constants/base.constants";
 
 // Utils
-import getRoute from "imbase/utils/getRoute";
-import VIEWS from "imbase/constants/route.views";
-import APPS from "imbase/constants/route.apps";
+import getRoute from "@im/base/src/utils/getRoute";
+import VIEWS from "@im/base/src/constants/route.views";
+import APPS from "@im/base/src/constants/route.apps";
 
 // Styles
 import styles from "./searchMovie.module.scss";

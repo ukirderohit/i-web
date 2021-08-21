@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 
 // Components
-import MoviesList from "imcomponents/pages/moviesList/MoviesList";
-import AppLoader from "imcomponents/molecules/appLoader";
+import MoviesList from "@im/components/src/pages/moviesList/MoviesList";
+import AppLoader from "@im/components/src/molecules/appLoader";
 import AppSkeleton from "../organisms/appSkeleton";
 import Dashboard from "../pages/dashboard";
 import EditVideo from "../pages/editVideo";
