@@ -8,7 +8,7 @@
   "scripts": {
     "start": "lerna exec --scope @im/ott -- yarn start",
     "build": "lerna exec --scope @im/ott -- yarn build",
-    "test": "lerna exec --scope @im/ott -- yarn test",
+    "test": "lerna exec --scope @im/components -- yarn test && lerna exec --scope @im/ott -- yarn test  && lerna exec --scope @im/studio -- yarn test",
     "start-studio": "lerna exec --scope @im/studio -- yarn start",
     "build-studio": "lerna exec --scope @im/studio -- yarn build"
   },
