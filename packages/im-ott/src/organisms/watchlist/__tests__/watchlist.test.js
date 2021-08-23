@@ -5,7 +5,7 @@ import renderer from "react-test-renderer";
 
 afterEach(cleanup);
 
-it("Watchlist should render correctly", () => {
+it("<Watchlist/> should render correctly", () => {
   const tree = renderer.create(<Watchlist />).toJSON();
   expect(tree).toMatchSnapshot();
 });

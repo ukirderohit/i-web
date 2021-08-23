@@ -19,7 +19,7 @@ jest.mock("react-router-dom", () => ({
   }),
 }));
 
-it("Navbar should render correctly", () => {
+it("<Navbar/> should render correctly", () => {
   const tree = renderer.create(<Navbar />).toJSON();
   expect(tree).toMatchSnapshot();
 });

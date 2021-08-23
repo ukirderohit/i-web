@@ -5,7 +5,7 @@ import renderer from "react-test-renderer";
 
 afterEach(cleanup);
 
-it("CommentThread should render correctly", () => {
+it("<CommentThread/> should render correctly", () => {
   const tree = renderer.create(<CommentThread />).toJSON();
   expect(tree).toMatchSnapshot();
 });

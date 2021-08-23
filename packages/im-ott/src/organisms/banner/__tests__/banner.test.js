@@ -5,7 +5,7 @@ import renderer from "react-test-renderer";
 
 afterEach(cleanup);
 
-it("Banner should render correctly", () => {
+it("<Banner/> should render correctly", () => {
   const tree = renderer.create(<Banner />).toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -5,7 +5,7 @@ import renderer from "react-test-renderer";
 
 afterEach(cleanup);
 
-it("SearchMovie should render correctly", () => {
+it("<SearchMovie/> should render correctly", () => {
   const tree = renderer.create(<SearchMovie />).toJSON();
   expect(tree).toMatchSnapshot();
 });

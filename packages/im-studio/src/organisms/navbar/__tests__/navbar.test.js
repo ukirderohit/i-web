@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup } from "@testing-library/react";
-import FooterMenu from "../FooterMenu";
+import Navbar from "../Navbar";
 import renderer from "react-test-renderer";
 
 afterEach(cleanup);
@@ -19,7 +19,7 @@ jest.mock("react-router-dom", () => ({
   }),
 }));
 
-it("<FooterMenu/> should render correctly", () => {
-  const tree = renderer.create(<FooterMenu />).toJSON();
+it("Navbar should render correctly", () => {
+  const tree = renderer.create(<Navbar />).toJSON();
   expect(tree).toMatchSnapshot();
 });
