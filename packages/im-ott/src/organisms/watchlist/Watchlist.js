@@ -23,13 +23,17 @@ import styles from "./watchlist.module.scss";
 
 const Watchlist = (props) => {
   const { className, movieId } = props;
-  const [isWatchlisted, setIsWatchlisted] = useState(true);
+  const [isWatchlisted, setIsWatchlisted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   const { user } = useContext(UserContext);
   const label = isWatchlisted ? "Watchlist" : "Watchlist";
-  const labelIcon = isWatchlisted ? <MinusOutlined /> : <PlusOutlined />;
+  const labelIcon = isWatchlisted ? (
+    <MinusOutlined data-testid="minus" />
+  ) : (
+    <PlusOutlined data-testid="plus" />
+  );
 
   useEffect(() => {
     gqlClient
@@ -37,7 +41,7 @@ const Watchlist = (props) => {
         query: IS_WATCHLISTED,
         variables: {
           movieId: movieId,
-          userId: user.uid,
+          userId: user?.uid,
         },
       })
       .then((response) => {
@@ -48,7 +52,7 @@ const Watchlist = (props) => {
           setIsWatchlisted(false);
         }
       });
-  }, [movieId, user.uid]);
+  }, [movieId, user?.uid]);
 
   const handleWatchlist = () => {
     let mutateQuery;
@@ -63,7 +67,7 @@ const Watchlist = (props) => {
         mutation: mutateQuery,
         variables: {
           movieId: movieId,
-          userid: user.uid,
+          userid: user?.uid,
         },
       })
       .then((response) => {
@@ -91,9 +95,12 @@ const Watchlist = (props) => {
       className={`${styles.button} ${className}`}
       onClick={handleWatchlist}
       type={BUTTON_TYPES.TERTIARY}
+      data-testid="add-remove-watchlist-button"
     >
       {labelIcon}
-      <span className={styles.label}>{label}</span>
+      <span className={styles.label} data-testid="add-remove-watchlist-label">
+        {label}
+      </span>
     </Button>
   );
 };

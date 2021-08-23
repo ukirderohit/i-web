@@ -119,9 +119,17 @@ const WatchList = () => {
           <h1>Watchlist</h1>
         )}
         {loading ? (
-          _times(8, (movie) => (
-            <Skeleton.Image active={true} className={styles.skeleton} />
-          ))
+          _times(
+            8,
+            (movie, index) =>
+              index && (
+                <Skeleton.Image
+                  key={"watchlist-skeleton-img" + index}
+                  active={true}
+                  className={styles.skeleton}
+                />
+              )
+          )
         ) : _isEmpty(films) ? (
           <div>
             <p className={styles.infoText}>

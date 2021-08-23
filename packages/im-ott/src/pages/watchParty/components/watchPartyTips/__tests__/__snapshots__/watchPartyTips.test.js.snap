@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WatchPartyTips should render correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="titleContainer"
+  >
+    <h1
+      className="ant-typography ant-typography-ellipsis ant-typography-single-line ant-typography-ellipsis-single-line textWhite title"
+      style={
+        Object {
+          "WebkitLineClamp": undefined,
+        }
+      }
+    >
+      Watch Party Tips
+    </h1>
+  </div>
+  <div
+    className="ant-carousel"
+  >
+    <div
+      className="slick-slider slick-initialized"
+      dir="ltr"
+    >
+      <div
+        className="slick-list"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={null}
+        onMouseMove={null}
+        onMouseUp={[Function]}
+        onTouchCancel={null}
+        onTouchEnd={[Function]}
+        onTouchMove={null}
+        onTouchStart={[Function]}
+        style={Object {}}
+      >
+        <div
+          className="slick-track"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "WebkitTransform": "translate3d(0px, 0px, 0px)",
+              "WebkitTransition": "",
+              "msTransform": "translateX(0px)",
+              "opacity": 1,
+              "transform": "translate3d(0px, 0px, 0px)",
+              "transition": "",
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-cloned"
+            data-index={-1}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <div
+                className="tipContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <span
+                  className="ant-typography textWhite tip"
+                  style={
+                    Object {
+                      "WebkitLineClamp": undefined,
+                    }
+                  }
+                >
+                  To add more people, share the Watch Party link.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden={false}
+            className="slick-slide slick-active slick-current"
+            data-index={0}
+            onClick={[Function]}
+            style={
+              Object {
+                "outline": "none",
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <div
+                className="tipContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <span
+                  className="ant-typography textWhite tip"
+                  style={
+                    Object {
+                      "WebkitLineClamp": undefined,
+                    }
+                  }
+                >
+                  The person who created the Watch Party controls the video, including pause, play, rewind, and fast forwarding. Each participant controls his or her own audio and subtitle settings.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide"
+            data-index={1}
+            onClick={[Function]}
+            style={
+              Object {
+                "outline": "none",
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <div
+                className="tipContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <span
+                  className="ant-typography textWhite tip"
+                  style={
+                    Object {
+                      "WebkitLineClamp": undefined,
+                    }
+                  }
+                >
+                  To add more people, share the Watch Party link.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-cloned"
+            data-index={2}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <div
+                className="tipContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <span
+                  className="ant-typography textWhite tip"
+                  style={
+                    Object {
+                      "WebkitLineClamp": undefined,
+                    }
+                  }
+                >
+                  The person who created the Watch Party controls the video, including pause, play, rewind, and fast forwarding. Each participant controls his or her own audio and subtitle settings.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-cloned"
+            data-index={3}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <div
+                className="tipContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <span
+                  className="ant-typography textWhite tip"
+                  style={
+                    Object {
+                      "WebkitLineClamp": undefined,
+                    }
+                  }
+                >
+                  To add more people, share the Watch Party link.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul
+        className="slick-dots slick-dots-bottom"
+        onMouseEnter={null}
+        onMouseLeave={null}
+        onMouseOver={null}
+        style={
+          Object {
+            "display": "block",
+          }
+        }
+      >
+        <li
+          className="slick-active"
+        >
+          <button
+            onClick={[Function]}
+          >
+            1
+          </button>
+        </li>
+        <li
+          className=""
+        >
+          <button
+            onClick={[Function]}
+          >
+            2
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

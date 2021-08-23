@@ -1,0 +1,493 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateWatchParty should render correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="playerContainer"
+  >
+    <div
+      className="movieDetails"
+    >
+      <div
+        className="movieTitleDetails"
+      >
+        <span
+          className="ant-typography textWhite watchPartyLabel"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          Create Watch Party for
+        </span>
+        <h1
+          className="ant-typography ant-typography-ellipsis ant-typography-single-line ant-typography-ellipsis-single-line textWhite movietitle"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          Shershah
+        </h1>
+      </div>
+      <div
+        className="movieImage"
+      >
+        <div
+          className="ant-image"
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          <img
+            className="ant-image-img"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="https://images-eu.ssl-images-amazon.com/images/S/atv-aps-images/encoded/DHARMA_SHAH/IN/en_US.hi_IN/COVER_ART/NEW_MOVIE/Save._UR800,450_RI_SX712_.jpg"
+            style={
+              Object {
+                "height": undefined,
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="watchPartyTips"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="titleContainer"
+        >
+          <h1
+            className="ant-typography ant-typography-ellipsis ant-typography-single-line ant-typography-ellipsis-single-line textWhite title"
+            style={
+              Object {
+                "WebkitLineClamp": undefined,
+              }
+            }
+          >
+            Watch Party Tips
+          </h1>
+        </div>
+        <div
+          className="ant-carousel"
+        >
+          <div
+            className="slick-slider slick-initialized"
+            dir="ltr"
+          >
+            <div
+              className="slick-list"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={null}
+              onMouseMove={null}
+              onMouseUp={[Function]}
+              onTouchCancel={null}
+              onTouchEnd={[Function]}
+              onTouchMove={null}
+              onTouchStart={[Function]}
+              style={Object {}}
+            >
+              <div
+                className="slick-track"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                    "WebkitTransition": "",
+                    "msTransform": "translateX(0px)",
+                    "opacity": 1,
+                    "transform": "translate3d(0px, 0px, 0px)",
+                    "transition": "",
+                  }
+                }
+              >
+                <div
+                  aria-hidden={true}
+                  className="slick-slide slick-cloned"
+                  data-index={-1}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "width": 0,
+                    }
+                  }
+                  tabIndex="-1"
+                >
+                  <div>
+                    <div
+                      className="tipContainer"
+                      style={
+                        Object {
+                          "display": "inline-block",
+                          "width": "100%",
+                        }
+                      }
+                      tabIndex={-1}
+                    >
+                      <span
+                        className="ant-typography textWhite tip"
+                        style={
+                          Object {
+                            "WebkitLineClamp": undefined,
+                          }
+                        }
+                      >
+                        To add more people, share the Watch Party link.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-hidden={false}
+                  className="slick-slide slick-active slick-current"
+                  data-index={0}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "outline": "none",
+                      "width": 0,
+                    }
+                  }
+                  tabIndex="-1"
+                >
+                  <div>
+                    <div
+                      className="tipContainer"
+                      style={
+                        Object {
+                          "display": "inline-block",
+                          "width": "100%",
+                        }
+                      }
+                      tabIndex={-1}
+                    >
+                      <span
+                        className="ant-typography textWhite tip"
+                        style={
+                          Object {
+                            "WebkitLineClamp": undefined,
+                          }
+                        }
+                      >
+                        The person who created the Watch Party controls the video, including pause, play, rewind, and fast forwarding. Each participant controls his or her own audio and subtitle settings.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-hidden={true}
+                  className="slick-slide"
+                  data-index={1}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "outline": "none",
+                      "width": 0,
+                    }
+                  }
+                  tabIndex="-1"
+                >
+                  <div>
+                    <div
+                      className="tipContainer"
+                      style={
+                        Object {
+                          "display": "inline-block",
+                          "width": "100%",
+                        }
+                      }
+                      tabIndex={-1}
+                    >
+                      <span
+                        className="ant-typography textWhite tip"
+                        style={
+                          Object {
+                            "WebkitLineClamp": undefined,
+                          }
+                        }
+                      >
+                        To add more people, share the Watch Party link.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-hidden={true}
+                  className="slick-slide slick-cloned"
+                  data-index={2}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "width": 0,
+                    }
+                  }
+                  tabIndex="-1"
+                >
+                  <div>
+                    <div
+                      className="tipContainer"
+                      style={
+                        Object {
+                          "display": "inline-block",
+                          "width": "100%",
+                        }
+                      }
+                      tabIndex={-1}
+                    >
+                      <span
+                        className="ant-typography textWhite tip"
+                        style={
+                          Object {
+                            "WebkitLineClamp": undefined,
+                          }
+                        }
+                      >
+                        The person who created the Watch Party controls the video, including pause, play, rewind, and fast forwarding. Each participant controls his or her own audio and subtitle settings.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-hidden={true}
+                  className="slick-slide slick-cloned"
+                  data-index={3}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "width": 0,
+                    }
+                  }
+                  tabIndex="-1"
+                >
+                  <div>
+                    <div
+                      className="tipContainer"
+                      style={
+                        Object {
+                          "display": "inline-block",
+                          "width": "100%",
+                        }
+                      }
+                      tabIndex={-1}
+                    >
+                      <span
+                        className="ant-typography textWhite tip"
+                        style={
+                          Object {
+                            "WebkitLineClamp": undefined,
+                          }
+                        }
+                      >
+                        To add more people, share the Watch Party link.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul
+              className="slick-dots slick-dots-bottom"
+              onMouseEnter={null}
+              onMouseLeave={null}
+              onMouseOver={null}
+              style={
+                Object {
+                  "display": "block",
+                }
+              }
+            >
+              <li
+                className="slick-active"
+              >
+                <button
+                  onClick={[Function]}
+                >
+                  1
+                </button>
+              </li>
+              <li
+                className=""
+              >
+                <button
+                  onClick={[Function]}
+                >
+                  2
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="settingscontainer"
+  >
+    <div
+      className="settings bordered"
+    >
+      <h4
+        className="ant-typography ant-typography-ellipsis ant-typography-single-line ant-typography-ellipsis-single-line textWhite title"
+        style={
+          Object {
+            "WebkitLineClamp": undefined,
+          }
+        }
+      >
+        Let's start a watch party
+      </h4>
+      <span
+        className="ant-typography textWhite"
+        style={
+          Object {
+            "WebkitLineClamp": undefined,
+          }
+        }
+      >
+        With watch party, invite, watch and interact movies along others
+      </span>
+    </div>
+    <div
+      className="settings bordered"
+    >
+      <h1
+        className="ant-typography ant-typography-ellipsis ant-typography-single-line ant-typography-ellipsis-single-line textWhite inviteFriendsTitle"
+        style={
+          Object {
+            "WebkitLineClamp": undefined,
+          }
+        }
+      >
+        <span
+          className="ant-typography textWhite"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          Invite friends to join
+        </span>
+        <span
+          aria-label="info-circle"
+          className="anticon anticon-info-circle infoIcon"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="info-circle"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+            />
+            <path
+              d="M464 336a48 48 0 1096 0 48 48 0 10-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"
+            />
+          </svg>
+        </span>
+      </h1>
+      <input
+        className="ant-input"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Enter Email Address"
+        type="text"
+        value=""
+      />
+      <div
+        className="container"
+      >
+        0
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+        11
+        12
+        13
+        14
+        15
+      </div>
+    </div>
+    <div
+      className="settings actionButtons"
+    >
+      <button
+        className="ant-btn ant-btn-primary createWatchPartyButton button primaryButton"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          aria-label="eye"
+          className="anticon anticon-eye"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="eye"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z"
+            />
+          </svg>
+        </span>
+        <span>
+           
+        </span>
+        <span
+          className="createWatchPartyButtonLabel"
+        >
+          Create Watch Party
+        </span>
+      </button>
+      <button
+        className="ant-btn ant-btn-link createWatchPartyButton button"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="createWatchPartyButtonLabel"
+        >
+          Cancel
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

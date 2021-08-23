@@ -25,7 +25,7 @@ const UserProvider = (props) => {
       }
     });
   }, []);
-
+  
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 };
 

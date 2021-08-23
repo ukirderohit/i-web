@@ -3,14 +3,16 @@
   "private": true,
   "devDependencies": {
     "craco": "^0.0.3",
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "react-test-renderer": "^17.0.2"
   },
   "scripts": {
     "start": "lerna exec --scope @im/ott -- yarn start",
     "build": "lerna exec --scope @im/ott -- yarn build",
-    "test": "lerna exec --scope @im/components -- yarn test && lerna exec --scope @im/ott -- yarn test  && lerna exec --scope @im/studio -- yarn test",
+    "test": "lerna exec --scope @im/ott -- yarn test",
     "start-studio": "lerna exec --scope @im/studio -- yarn start",
-    "build-studio": "lerna exec --scope @im/studio -- yarn build"
+    "build-studio": "lerna exec --scope @im/studio -- yarn build",
+    "test-studio": "lerna exec --scope @im/studio -- yarn test"
   },
   "workspaces": {
     "packages": [

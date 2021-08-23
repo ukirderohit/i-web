@@ -171,9 +171,17 @@ const SearchMovie = (props) => {
             </p>
           )}
         {loading ? (
-          _times(8, (movie) => (
-            <Skeleton.Image active={true} className={styles.skeleton} />
-          ))
+          _times(
+            8,
+            (movie, index) =>
+              index && (
+                <Skeleton.Image
+                  key={"skeleton-image" + index}
+                  active={true}
+                  className={styles.skeleton}
+                />
+              )
+          )
         ) : (
           <div className={styles.movies}>
             {_map(searchDetails, renderMovie)}

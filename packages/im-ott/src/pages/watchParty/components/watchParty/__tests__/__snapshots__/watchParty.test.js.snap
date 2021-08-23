@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WatchParty should render correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="playerContainerClassName"
+  >
+    <div
+      className="playerWrapper playerContainerClassName"
+    >
+      <div
+        className="reactPlayer"
+        style={
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": undefined,
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          <div />
+        </div>
+      </div>
+      <div />
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="progress"
+      >
+        <div
+          className="ant-progress ant-progress-line ant-progress-status-active ant-progress-show-info ant-progress-default"
+        >
+          <div
+            className="ant-progress-outer"
+          >
+            <div
+              className="ant-progress-inner"
+            >
+              <div
+                className="ant-progress-bg"
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(to right, #23395d, #152238)",
+                    "borderRadius": "",
+                    "height": 8,
+                    "width": "0%",
+                  }
+                }
+              />
+            </div>
+          </div>
+          <span
+            className="ant-progress-text"
+            title="0%"
+          >
+            0%
+          </span>
+        </div>
+      </div>
+      <div
+        className="controls"
+      >
+        <button
+          className="mr1"
+          onClick={[Function]}
+          type="button"
+        >
+          Play
+        </button>
+        <button
+          className="mr1"
+          onClick={[Function]}
+          type="button"
+        >
+          Fullscreen
+        </button>
+        <button
+          className="mr1"
+          onClick={[Function]}
+        >
+          Stop
+        </button>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="watchPartySettings"
+  >
+    <div
+      className="triggerIcon"
+      onClick={[Function]}
+    >
+      <span
+        aria-label="right"
+        className="anticon anticon-right"
+        role="img"
+      >
+        <svg
+          aria-hidden="true"
+          data-icon="right"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          viewBox="64 64 896 896"
+          width="1em"
+        >
+          <path
+            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+          />
+        </svg>
+      </span>
+    </div>
+    <div
+      className="settings"
+    >
+      <div
+        className="section bordered"
+      >
+        <h1
+          className="ant-typography ant-typography-ellipsis ant-typography-single-line ant-typography-ellipsis-single-line textWhite"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          <span
+            className="inviteFriendsTitle"
+          >
+            Invite friends
+          </span>
+          <span
+            aria-label="info-circle"
+            className="anticon anticon-info-circle infoIcon"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="info-circle"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+              />
+              <path
+                d="M464 336a48 48 0 1096 0 48 48 0 10-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"
+              />
+            </svg>
+          </span>
+        </h1>
+        <span
+          className="ant-typography textWhite"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          Share the link with others and then everyone can watch together. They'll need to join from a web browser on their computer
+        </span>
+        <input
+          className="ant-input input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Enter Email Address"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="section bordered"
+      >
+        <h1
+          className="ant-typography ant-typography-ellipsis ant-typography-single-line ant-typography-ellipsis-single-line textWhite inviteFriendsTitle"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          Watch Party Details
+        </h1>
+        <span
+          className="ant-typography textWhite"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          6 Participants joined
+        </span>
+        <div
+          className="container"
+        >
+          0
+          1
+          2
+          3
+          4
+          5
+        </div>
+      </div>
+      <div
+        className="section"
+      >
+        <button
+          className="ant-btn ant-btn-primary endWatchPartyButton button primaryButton"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="endWatchPartyButtonLabel"
+          >
+            End Watch Party
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

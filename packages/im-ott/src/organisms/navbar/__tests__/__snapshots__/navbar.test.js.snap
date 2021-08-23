@@ -1,0 +1,337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar should render correctly 1`] = `
+<div
+  className="container"
+>
+  <Link
+    className="logo"
+    to="/"
+  >
+    <span
+      aria-label="video-camera"
+      className="anticon anticon-video-camera image"
+      role="img"
+    >
+      <svg
+        aria-hidden="true"
+        data-icon="video-camera"
+        fill="currentColor"
+        focusable="false"
+        height="1em"
+        viewBox="64 64 896 896"
+        width="1em"
+      >
+        <path
+          d="M912 302.3L784 376V224c0-35.3-28.7-64-64-64H128c-35.3 0-64 28.7-64 64v576c0 35.3 28.7 64 64 64h592c35.3 0 64-28.7 64-64V648l128 73.7c21.3 12.3 48-3.1 48-27.6V330c0-24.6-26.7-40-48-27.7zM328 352c0 4.4-3.6 8-8 8H208c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h112c4.4 0 8 3.6 8 8v48zm560 273l-104-59.8V458.9L888 399v226z"
+        />
+      </svg>
+    </span>
+    <div
+      className="text"
+    >
+      iFlix
+    </div>
+  </Link>
+  <div
+    className="browserView"
+  >
+    <ul
+      className="ant-menu-overflow ant-menu ant-menu-root ant-menu-horizontal ant-menu-light footerMenu"
+      data-menu-list={true}
+      onKeyDown={[Function]}
+      role="menu"
+      tabIndex={0}
+    >
+      <li
+        className="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child menuItem"
+        data-menu-id={null}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="menuitem"
+        style={
+          Object {
+            "height": undefined,
+            "opacity": 1,
+            "order": 0,
+            "overflowY": undefined,
+            "pointerEvents": undefined,
+            "position": undefined,
+          }
+        }
+        tabIndex={-1}
+      >
+        <span
+          aria-label="home"
+          className="anticon anticon-home ant-menu-item-icon"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="home"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M946.5 505L534.6 93.4a31.93 31.93 0 00-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z"
+            />
+          </svg>
+        </span>
+        <span
+          className="ant-menu-title-content"
+        />
+      </li>
+      <li
+        className="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child menuItem"
+        data-menu-id={null}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="menuitem"
+        style={
+          Object {
+            "height": undefined,
+            "opacity": 1,
+            "order": 1,
+            "overflowY": undefined,
+            "pointerEvents": undefined,
+            "position": undefined,
+          }
+        }
+        tabIndex={-1}
+      >
+        <span
+          aria-label="search"
+          className="anticon anticon-search ant-menu-item-icon"
+          role="img"
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="search"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+            />
+          </svg>
+        </span>
+        <span
+          className="ant-menu-title-content"
+        />
+      </li>
+      <li
+        className="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child menuItem"
+        data-menu-id={null}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="menuitem"
+        style={
+          Object {
+            "height": undefined,
+            "opacity": 1,
+            "order": 2,
+            "overflowY": undefined,
+            "pointerEvents": undefined,
+            "position": undefined,
+          }
+        }
+        tabIndex={-1}
+      >
+        <span
+          aria-label="heart"
+          className="anticon anticon-heart ant-menu-item-icon"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="heart"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M923 283.6a260.04 260.04 0 00-56.9-82.8 264.4 264.4 0 00-84-55.5A265.34 265.34 0 00679.7 125c-49.3 0-97.4 13.5-139.2 39-10 6.1-19.5 12.8-28.5 20.1-9-7.3-18.5-14-28.5-20.1-41.8-25.5-89.9-39-139.2-39-35.5 0-69.9 6.8-102.4 20.3-31.4 13-59.7 31.7-84 55.5a258.44 258.44 0 00-56.9 82.8c-13.9 32.3-21 66.6-21 101.9 0 33.3 6.8 68 20.3 103.3 11.3 29.5 27.5 60.1 48.2 91 32.8 48.9 77.9 99.9 133.9 151.6 92.8 85.7 184.7 144.9 188.6 147.3l23.7 15.2c10.5 6.7 24 6.7 34.5 0l23.7-15.2c3.9-2.5 95.7-61.6 188.6-147.3 56-51.7 101.1-102.7 133.9-151.6 20.7-30.9 37-61.5 48.2-91 13.5-35.3 20.3-70 20.3-103.3.1-35.3-7-69.6-20.9-101.9zM512 814.8S156 586.7 156 385.5C156 283.6 240.3 201 344.3 201c73.1 0 136.5 40.8 167.7 100.4C543.2 241.8 606.6 201 679.7 201c104 0 188.3 82.6 188.3 184.5 0 201.2-356 429.3-356 429.3z"
+            />
+          </svg>
+        </span>
+        <span
+          className="ant-menu-title-content"
+        />
+      </li>
+      <li
+        aria-disabled={true}
+        className="ant-menu-overflow-item ant-menu-item ant-menu-item-disabled ant-menu-item-only-child menuItem"
+        data-menu-id={null}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        role="menuitem"
+        style={
+          Object {
+            "height": undefined,
+            "opacity": 1,
+            "order": 3,
+            "overflowY": undefined,
+            "pointerEvents": undefined,
+            "position": undefined,
+          }
+        }
+        tabIndex={null}
+      >
+        <span
+          aria-label="bell"
+          className="anticon anticon-bell ant-menu-item-icon"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="bell"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M816 768h-24V428c0-141.1-104.3-257.7-240-277.1V112c0-22.1-17.9-40-40-40s-40 17.9-40 40v38.9c-135.7 19.4-240 136-240 277.1v340h-24c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h216c0 61.8 50.2 112 112 112s112-50.2 112-112h216c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM512 888c-26.5 0-48-21.5-48-48h96c0 26.5-21.5 48-48 48zM304 768V428c0-55.6 21.6-107.8 60.9-147.1S456.4 220 512 220c55.6 0 107.8 21.6 147.1 60.9S720 372.4 720 428v340H304z"
+            />
+          </svg>
+        </span>
+        <span
+          className="ant-menu-title-content"
+        />
+      </li>
+      <li
+        className="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child menuItem"
+        data-menu-id={null}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="menuitem"
+        style={
+          Object {
+            "height": undefined,
+            "opacity": 1,
+            "order": 4,
+            "overflowY": undefined,
+            "pointerEvents": undefined,
+            "position": undefined,
+          }
+        }
+        tabIndex={-1}
+      >
+        <span
+          aria-label="logout"
+          className="anticon anticon-logout ant-menu-item-icon"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="logout"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M868 732h-70.3c-4.8 0-9.3 2.1-12.3 5.8-7 8.5-14.5 16.7-22.4 24.5a353.84 353.84 0 01-112.7 75.9A352.8 352.8 0 01512.4 866c-47.9 0-94.3-9.4-137.9-27.8a353.84 353.84 0 01-112.7-75.9 353.28 353.28 0 01-76-112.5C167.3 606.2 158 559.9 158 512s9.4-94.2 27.8-137.8c17.8-42.1 43.4-80 76-112.5s70.5-58.1 112.7-75.9c43.6-18.4 90-27.8 137.9-27.8 47.9 0 94.3 9.3 137.9 27.8 42.2 17.8 80.1 43.4 112.7 75.9 7.9 7.9 15.3 16.1 22.4 24.5 3 3.7 7.6 5.8 12.3 5.8H868c6.3 0 10.2-7 6.7-12.3C798 160.5 663.8 81.6 511.3 82 271.7 82.6 79.6 277.1 82 516.4 84.4 751.9 276.2 942 512.4 942c152.1 0 285.7-78.8 362.3-197.7 3.4-5.3-.4-12.3-6.7-12.3zm88.9-226.3L815 393.7c-5.3-4.2-13-.4-13 6.3v76H488c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h314v76c0 6.7 7.8 10.5 13 6.3l141.9-112a8 8 0 000-12.6z"
+            />
+          </svg>
+        </span>
+        <span
+          className="ant-menu-title-content"
+        />
+      </li>
+      <li
+        aria-hidden={true}
+        className="ant-menu-overflow-item ant-menu-overflow-item-rest ant-menu-submenu ant-menu-submenu-horizontal"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="none"
+        style={
+          Object {
+            "height": 0,
+            "opacity": 0,
+            "order": 9007199254740991,
+            "overflowY": "hidden",
+            "pointerEvents": "none",
+            "position": "absolute",
+          }
+        }
+      >
+        <div
+          aria-controls={null}
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="ant-menu-submenu-title"
+          data-menu-id={null}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="menuitem"
+          style={null}
+          tabIndex={-1}
+          title={null}
+        >
+          <span
+            aria-label="ellipsis"
+            className="anticon anticon-ellipsis"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="ellipsis"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z"
+              />
+            </svg>
+          </span>
+          <i
+            className="ant-menu-submenu-arrow"
+          />
+        </div>
+      </li>
+    </ul>
+    <div
+      aria-hidden={true}
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    />
+  </div>
+</div>
+`;
